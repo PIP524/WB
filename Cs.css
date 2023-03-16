@@ -1,0 +1,47 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+#robot {
+	background-image: url("robot.gif");
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 150px;
+	left: -200px;
+	animation: move 5s infinite;
+}
+
+@keyframes move {
+	from {left: -200px;}
+	to {left: calc(100% + 200px);}
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+#quote {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#input {
+	font-size: 16px;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+#result {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#mistake {
+	font-weight: bold;
+}
